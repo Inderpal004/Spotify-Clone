@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone - Inderpal</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container bg-black flex">
+        <div class="left">
+            <div class="home p-1 m-1 bg-gray rounded">
+                <div class="logo">
+                    <img class="invert" id="logo" src="svgs/logo.svg" alt="logo" />
+                    <i class="ri-close-fill" id="close"></i>
+                </div>
+                <ul>
+                    <li class="flex">
+                        <img class="invert" src="svgs/home.svg" alt="home" />Home
+                    </li>
+                    <li class="flex">
+                        <img class="invert" src="svgs/search.svg" alt="search" />Search
+                    </li>
+                </ul>
+            </div>
+            <div class="library m-1 rounded bg-gray p-1">
+                <div class="heading">
+                    <img src="svgs/playlist.svg" alt="playlist" class="invert" />
+                    <h3>Your Library</h3>
+                </div>
+                <div class="songs-list">
+                    <ul></ul>
+                </div>
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/jp/accessibility"><span>Accessibility</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right rounded">
+            <div class="header">
+                <div class="nav">
+                    <i class="ri-menu-line" id="hamburger"></i>
+                    <div class="nav-circle">
+                        <i class="ri-arrow-left-s-line arrows"></i>
+                    </div>
+                    <div class="nav-circle">
+                        <i class="ri-arrow-right-s-line arrows"></i>
+                    </div>
+                </div>
+                <div class="nav-buttons">
+                    <button>Sign up</button>
+                    <button>Log in</button>
+                </div>
+            </div>
+            <div class="spotify-playlist">
+                <h2>Spotify Playlists</h2>
+                <div class="card-container">
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="above-bar">
+                        <div class="song-info"></div>
+                        <div class="play-buttons">
+                            <i class="ri-skip-left-fill" id="previous"></i>
+                            <i class="ri-play-circle-fill" id="play"></i>
+                            <i class="ri-skip-right-fill" id="next"></i>
+                        </div>
+                        <div class="flex-div">
+                            <div class="song-time"></div>
+                           <div class="volume-div">
+                            <i class="ri-volume-up-line" id="volume"></i>
+                            <input type="range" name="" id="volRange">
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
